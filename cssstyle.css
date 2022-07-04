@@ -94,11 +94,46 @@ body{
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 .foto-perfi img{
     height: 150px;
+}
+.foto-perfil{
+    position: absolute;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;   
+}
+.foto-perfil:nth-child(1){
+    animation-delay:0s;
+}
+.foto-perfil:nth-child(2){
+    animation-delay: 5s;
+}
+.foto-perfil:nth-child(3){
+    animation-delay: 10s;
+    
+}
+.foto-perfil:nth-child(4){
+    animation-delay: 15s;
+}
+.foto-perfil:nth-child(5){
+    animation-delay: 20s;
+}
+@keyframes animacao{
+    
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
 }
 .insta-inicio{
     background-color: #0095f6;
